@@ -2,9 +2,6 @@ package exercice1;
 
 import org.junit.Test;
 
-import exercice1.LambdaExamples;
-import exercice1.LambdaExamplesSolved;
-
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -101,7 +98,7 @@ public class LambdaExamplesTest {
     public void should_add_string_to_list() {
         // Given
         List<String> list = new ArrayList<>();
-        Consumer<String> consumer = LambdaExamplesSolved.addToListConsumer(list);
+        Consumer<String> consumer = LambdaExamples.addToListConsumer(list);
 
         // When
         consumer.accept("abc");
